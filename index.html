@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Suporte do iFood</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Suporte do iFood</h1>
+
+        <h2>
+            Alô, iFood!<br>
+            Manda uma pizza, tô com fome!<br>
+            Metade calabresa e metade 4 queijos.<br>
+            E uma coquinha gelada.
+        </h2>
+
+        <button onclick="pedirPizza()">
+            Pedir minha pizza 🍕
+        </button>
+
+        <div id="mensagem" class="mensagem" hidden>
+            <h2>Você não tem dinheiro! 💸</h2>
+            <p>Hahaha pobre... 😂</p>
+        </div>
+
+    </main>
+
+    <script>
+        function pedirPizza() {
+            document.getElementById("mensagem").hidden = false;
+        }
+    </script>
+
+</body>
+</html>
